@@ -10,7 +10,7 @@ import MoneyIcon from '@mui/icons-material/Money';
 export default function Navs({ isOpen }) {
 	return (
 		<ul className="navs">
-			<Nav icon={<HomeIcon />} link="Home" isOpen={isOpen} />
+			<Nav icon={<HomeIcon />} link="Home" isOpen={isOpen} onClick={() => window.location.href = "/main"} />
 			<Nav icon={<MoneyIcon />} link="Budget" isOpen={isOpen} />
 			<Nav icon={<BarChartIcon />} link="Analytics" isOpen={isOpen} />
 			<Nav icon={<LibraryBooksIcon />} link="Lessons" isOpen={isOpen} />

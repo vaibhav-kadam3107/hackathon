@@ -8,18 +8,15 @@ import Lessons from "./components/Lessons/Lessons";
 import Invest from "./components/Investment/Lessons";
 import SignupForm from "./components/sign/signup";
 import Main from "./components/Main/main";
+import SignIn from "./components/sign/singin";
 function App() {
 	return (
 		<Router>
 			<AppProvider>
-				<div className="app flex h-screen">
-					<Sidebar />
-					<div className="flex-1 flex place-content-center py-3 overflow-hidden">
-						<div className="content shadow-lg bg-white rounded-2xl p-4">
 							<Routes>
-								<Route path="/" exact element={<Main />} />
+								<Route path="/" exact element={<SignIn />} />
 								<Route
-									path="/home"
+									path="/budget"
 									element={<Home />}
 								/>
 								<Route
@@ -35,16 +32,17 @@ function App() {
 									element={<Invest />}
 								/>
 
-								{/* <Route 
-									path="/signup"
-									element={<SignupForm />}
-								/> */}
+								<Route 
+									path="/signin"
+									element={<SignIn />}
+								/>
 
-								<Route path="*" element={<Home />} />
+								<Route 
+									path="/main" 
+									element={<Main />} 
+								/>
+
 							</Routes>
-						</div>
-					</div>
-				</div>
 			</AppProvider>
 		</Router>
 	);

@@ -4,7 +4,7 @@ import { H1 } from "../../styles/twStyles";
 import Chart from "../Home/Chart";
 import Table from "./Table";
 import Pagination from "./Pagination";
-
+import Sidebar from "../../Sidebar/Sidebar";
 export default function Analytics() {
 	const { expenses, incomes } = useContext(AppContext);
 	const [transactions] = useState(
@@ -44,22 +44,29 @@ export default function Analytics() {
 	};
 
 	return (
-		<div className="container mx-auto px-4">
-			<h1 className={H1}>Analytics</h1>
-			<Chart type="Bar" width="35vw" labels={1} />
-			<br />
-			<br />
-			<Table rows={currentrows} />
-			{rows.length > 3 && (
-				<Pagination
-					showing={currentrows.length}
-					rowsPerPage={rowsPerPage}
-					totalrows={rows.length}
-					paginateBack={paginateBack}
-					paginateFront={paginateFront}
-					currentPage={currentPage}
-				/>
-			)}
+		<div className="app flex h-screen">
+			<Sidebar />
+			<div className="flex-1 flex place-content-center py-3 overflow-hidden">
+				<div className="content shadow-lg bg-white rounded-2xl p-4">
+					<div className="container mx-auto px-4">
+						<h1 className={H1}>Analytics</h1>
+						<Chart type="Bar" width="35vw" labels={1} />
+						<br />
+						<br />
+						<Table rows={currentrows} />
+							{rows.length > 3 && (
+								<Pagination
+									showing={currentrows.length}
+									rowsPerPage={rowsPerPage}
+									totalrows={rows.length}
+									paginateBack={paginateBack}
+									paginateFront={paginateFront}
+									currentPage={currentPage}
+								/>
+							)}
+					</div>
+				</div>
+			</div>
 		</div>
 	);
 }

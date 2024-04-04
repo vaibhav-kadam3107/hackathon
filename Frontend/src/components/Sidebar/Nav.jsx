@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 
 export default function Nav({ icon, link, isOpen, onClick }) {
 	const location = useLocation();
-	let currentLink = "/";
+	let currentLink = "/main";
 	if (link !== "Home") currentLink = "/" + link.toLowerCase();
 	const styleNav = `${
 		location.pathname === currentLink
