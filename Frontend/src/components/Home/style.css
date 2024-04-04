@@ -1,0 +1,23 @@
+.recent_expenses {
+    /* Hide the scrollbar in IE/Edge */
+    scrollbar-width: none; /* Hide the scrollbar in Firefox */
+    -ms-overflow-style: none; /* Hide the scrollbar in IE/Edge */
+}
+
+.recent_expenses::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar in WebKit browsers (Chrome, Safari) */
+}
+
+.expenses {
+    max-height: 300px; /* Set the maximum height for the container */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding-right: 20px; /* Add some padding to the right to avoid horizontal scrollbar */
+}
+
+.expenses > div {
+    min-width: 300px; /* Set a minimum width for the transaction items */
+    border: 1px solid #ccc; /* Add border to each transaction item */
+    border-radius: 8px; /* Add border radius */
+    margin-bottom: 10px; /* Add some margin between transaction items */
+    padding: 10px; /* Add padding inside each transaction item */
+}

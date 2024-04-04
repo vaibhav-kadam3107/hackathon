@@ -7,7 +7,7 @@ import { AppProvider } from "./Context/AppContext";
 import Lessons from "./components/Lessons/Lessons";
 import Invest from "./components/Investment/Lessons";
 import SignupForm from "./components/sign/signup";
-
+import Main from "./components/Main/main";
 function App() {
 	return (
 		<Router>
@@ -17,7 +17,11 @@ function App() {
 					<div className="flex-1 flex place-content-center py-3 overflow-hidden">
 						<div className="content shadow-lg bg-white rounded-2xl p-4">
 							<Routes>
-								<Route path="/" exact element={<Home />} />
+								<Route path="/" exact element={<Main />} />
+								<Route
+									path="/home"
+									element={<Home />}
+								/>
 								<Route
 									path="/analytics"
 									element={<Analytics />}
