@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/logo-1.svg";
+import logo from "../../assets/logo.svg";
 
 export default function Logo({ isOpen }) {
 	return (
@@ -14,7 +14,7 @@ export default function Logo({ isOpen }) {
 				className={`font-extrabold origin-left duration-100
 				text-brown-main text-3xl ${!isOpen && "opacity-0"}`}
 			>
-				Budgie
+				Nivesh
 			</h1>
 		</div>
 	);

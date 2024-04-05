@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3e5d9; /* light brown-orange background color */
+    overflow-y: auto; /* Make body scrollable */
+}
+
+h1 {
+    text-align: center;
+    color: #634d4d; /* dark brown text color */
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff; /* white background color for table */
+}
+
+table th, table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+table tbody tr:hover {
+    background-color: #ffe6cc; /* light orange hover color */
+}
+
+p {
+    text-align: center;
+    color: #634d4d; /* dark brown text color */
+}
+
+.budget, .portfolio {
+    font-weight: bold;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #f79e02; /* orange button color */
+    color: #fff; /* white text color */
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e68a00; /* dark orange hover color */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.values {
+    margin-bottom: 20px;
+}
+
+.graph-container {
+    width: 80%;
+    max-width: 800px;
+}

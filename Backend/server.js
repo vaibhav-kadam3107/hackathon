@@ -65,7 +65,7 @@ app.post('/api/expenses', async (req, res) => {
 
 app.get('/api/transactions', async (req, res) => {
   try {
-    const { rows } = await pool.query('SELECT * FROM expenses');
+    const { rows } = await pool.query('SELECT * FROM expenses ORDER BY id DESC');
     res.json(rows);
     console.log(res.body)
   } catch (error) {

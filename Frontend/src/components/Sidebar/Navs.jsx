@@ -9,12 +9,13 @@ import MoneyIcon from '@mui/icons-material/Money';
 
 export default function Navs({ isOpen }) {
 	return (
-		<ul className="navs">
+		<ul className="navs" style={{ listStyleType: 'none' }}>
 			<Nav icon={<HomeIcon />} link="Home" isOpen={isOpen} onClick={() => window.location.href = "/main"} />
 			<Nav icon={<MoneyIcon />} link="Budget" isOpen={isOpen} />
 			<Nav icon={<BarChartIcon />} link="Analytics" isOpen={isOpen} />
 			<Nav icon={<LibraryBooksIcon />} link="Lessons" isOpen={isOpen} />
 			<Nav icon={<ShowChartIcon />} link="Investment" isOpen={isOpen} />
 		</ul>
+
 	);
 }

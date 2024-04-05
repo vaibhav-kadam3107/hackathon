@@ -8,7 +8,6 @@ export default function Main() {
 					<div className="flex-1 flex place-content-center py-3 overflow-hidden">
 						<div className="content shadow-lg bg-white rounded-2xl p-4">
               <div className="main">
-                <h1>About INVEST-IQ</h1>
                 <AboutSection />
               </div>
             </div>

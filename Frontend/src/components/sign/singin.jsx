@@ -35,7 +35,7 @@ export default function SignIn() {
         <div className="content shadow-lg bg-white rounded-2xl p-4">
           <div className="container">
             <header className="header">
-              <h1 className="app-name">Budgie</h1>
+              <h1 className="app-name">Nivesh</h1>
             </header>
             <div className="form-container">
               <h1 className="h1">Sign In</h1>

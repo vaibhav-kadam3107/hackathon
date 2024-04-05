@@ -26,15 +26,14 @@ export default function LessonsPage() {
                 </div>
                 {activeTab === 'lessons' && (
                   <div>
-                    <h1>Investment Lessons</h1>
-                    <br />
+                    {/* <h1>Investment Lessons</h1> */}
                     <Investments />
                   </div>
                 )}
                 {activeTab === 'investments' && (
                   <div>
                     {/* Render Investments component here */}
-                    <h1>Investments</h1>
+                    <h2>Virtual Stock Market</h2>
                     <Stocks />
                   </div>
                 )}

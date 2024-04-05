@@ -20,7 +20,7 @@ function SignupForm() {
 
   return (
     <div className="signup-container">
-      <h1>Budgie</h1>
+      <h1>Nivesh</h1>
       <div className="signin-link">
         <a href="/signin">Sign in</a>
       </div>

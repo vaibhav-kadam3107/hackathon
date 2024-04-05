@@ -5,22 +5,32 @@
   scrollbar-width: none;
 }
 
+ul {
+  /* list-style-type: disc; Use disc for filled circles, other options include circle, square, etc. */
+  /* margin-left: 0px; Adjust margin as needed */
+}
+
+li {
+  margin-bottom: 8px; /* Adjust spacing between list items */
+}
+
+
 .about-section {
   max-width: 100%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px;
 }
 
 .content {
   margin-top: 20px;
-  
 }
+
 
 .illustration {
   float: left;
   margin-right: 20px;
   margin-bottom: 20px;
-  max-width: 40%;
+  max-width: 50%;
 }
 
 .features {
@@ -35,10 +45,9 @@
 }
 
 .content p {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.6;
   color: #555;
-  
 }
 
 /* Colors */
@@ -78,13 +87,3 @@
   margin: 0;
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 800px) {
-  .feature-box-container {
-    grid-template-columns: 1fr;
-  }
-
-  .illustration {
-    max-width: 100%;
-  }
-}
